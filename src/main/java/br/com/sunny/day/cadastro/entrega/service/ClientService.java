@@ -1,6 +1,7 @@
 package br.com.sunny.day.cadastro.entrega.service;
 
 import br.com.sunny.day.cadastro.entrega.integration.ConsultaCep;
+import br.com.sunny.day.cadastro.entrega.integration.implementation.ConsultaCepWithViaCep;
 import br.com.sunny.day.cadastro.entrega.domain.dto.Cep;
 import br.com.sunny.day.cadastro.entrega.domain.orm.Client;
 import br.com.sunny.day.cadastro.entrega.repository.ClientRepository;
