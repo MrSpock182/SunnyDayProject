@@ -1,4 +1,6 @@
-package br.com.sunny.day.cadastro.entrega.objects;
+package br.com.sunny.day.cadastro.entrega.domain.orm;
+
+import br.com.sunny.day.cadastro.entrega.domain.enumerable.GenderEnum;
 
 import javax.persistence.*;
 import java.time.LocalDate;

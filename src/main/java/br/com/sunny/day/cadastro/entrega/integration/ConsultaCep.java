@@ -1,6 +1,6 @@
 package br.com.sunny.day.cadastro.entrega.integration;
 
-import br.com.sunny.day.cadastro.entrega.objects.Cep;
+import br.com.sunny.day.cadastro.entrega.domain.dto.Cep;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

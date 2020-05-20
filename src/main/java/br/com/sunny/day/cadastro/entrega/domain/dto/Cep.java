@@ -1,4 +1,4 @@
-package br.com.sunny.day.cadastro.entrega.objects;
+package br.com.sunny.day.cadastro.entrega.domain.dto;
 
 public class Cep {
     private String logradouro;
