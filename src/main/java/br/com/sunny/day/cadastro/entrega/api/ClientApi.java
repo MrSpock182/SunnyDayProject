@@ -2,7 +2,7 @@ package br.com.sunny.day.cadastro.entrega.api;
 
 import br.com.sunny.day.cadastro.entrega.domain.dto.Cep;
 import br.com.sunny.day.cadastro.entrega.domain.orm.Client;
-import br.com.sunny.day.cadastro.entrega.repository.ClientRepository;
+import br.com.sunny.day.cadastro.entrega.repository.ClientRepositoryWithMongo;
 import br.com.sunny.day.cadastro.entrega.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +14,7 @@ public class ClientApi {
     private ClientService service;
 
     @Autowired
-    private ClientRepository repository;
+    private ClientRepositoryWithMongo repository;
 
     @PostMapping("/save")
     public void save(@RequestBody Client client) {

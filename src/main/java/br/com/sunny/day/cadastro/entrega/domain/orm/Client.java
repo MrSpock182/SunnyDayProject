@@ -1,15 +1,14 @@
 package br.com.sunny.day.cadastro.entrega.domain.orm;
 
 import br.com.sunny.day.cadastro.entrega.domain.enumerable.GenderEnum;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.*;
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "client")
+@Document(collection = "client")
 public class Client {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
     private String user;
