@@ -1,26 +1,42 @@
 package br.com.sunny.day.cadastro.entrega.repository.implementation;
 
-import br.com.sunny.day.cadastro.entrega.core.domain.orm.Client;
+import br.com.sunny.day.cadastro.entrega.core.domain.dto.Client;
+import br.com.sunny.day.cadastro.entrega.repository.orm.ClientOrm;
 import br.com.sunny.day.cadastro.entrega.repository.ClientRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
-@Repository
 public class ClientRepositoryImpl implements ClientRepository {
 
-    @Autowired
-    private ClientRepositoryWithMongo repository;
+    private final ClientRepositoryWithMongo repository;
+
+    public ClientRepositoryImpl(ClientRepositoryWithMongo repository) {
+        this.repository = repository;
+    }
 
     @Override
-    public Client save(Client client) {
-        client.setId(UUID.randomUUID().toString());
-        return repository.save(client);
+    public void save(Client client) {
+        ClientOrm orm = new ClientOrm();
+        orm.setId(UUID.randomUUID().toString());
+        orm.setName(client.getName());
+        orm.setUser(client.getUser());
+        orm.setPassword(client.getPassword());
+        orm.setCep(client.getCep());
+        orm.setGender(client.getGender());
+        orm.setBirthDate(client.getBirthDate());
+        repository.save(orm);
     }
 
     @Override
     public Client findByUser(String user) {
-        return repository.findByUser(user);
+        ClientOrm orm = repository.findByUser(user);
+        Client client = new Client();
+        client.setName(orm.getName());
+        client.setUser(orm.getUser());
+        client.setPassword(orm.getPassword());
+        client.setCep(orm.getCep());
+        client.setGender(orm.getGender());
+        client.setBirthDate(orm.getBirthDate());
+        return client;
     }
 }

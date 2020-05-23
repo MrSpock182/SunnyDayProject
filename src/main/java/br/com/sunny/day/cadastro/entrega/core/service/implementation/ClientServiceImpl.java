@@ -1,21 +1,21 @@
 package br.com.sunny.day.cadastro.entrega.core.service.implementation;
 
+import br.com.sunny.day.cadastro.entrega.core.domain.dto.Client;
 import br.com.sunny.day.cadastro.entrega.integration.ConsultaCep;
 import br.com.sunny.day.cadastro.entrega.core.domain.dto.Cep;
-import br.com.sunny.day.cadastro.entrega.core.domain.orm.Client;
 import br.com.sunny.day.cadastro.entrega.repository.ClientRepository;
 import br.com.sunny.day.cadastro.entrega.core.service.ClientService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service
 public class ClientServiceImpl implements ClientService {
 
-    @Autowired
     private ConsultaCep consultaCep;
 
-    @Autowired
     private ClientRepository repository;
+
+    public ClientServiceImpl(ConsultaCep consultaCep, ClientRepository repository) {
+        this.repository = repository;
+        this.consultaCep = consultaCep;
+    }
 
     @Override
     public Cep validation(String user) {

@@ -1,7 +1,8 @@
 package br.com.sunny.day.cadastro.entrega.framework.api;
 
 import br.com.sunny.day.cadastro.entrega.core.domain.dto.Cep;
-import br.com.sunny.day.cadastro.entrega.core.domain.orm.Client;
+import br.com.sunny.day.cadastro.entrega.core.domain.dto.Client;
+import br.com.sunny.day.cadastro.entrega.repository.orm.ClientOrm;
 import br.com.sunny.day.cadastro.entrega.core.service.ClientSaveService;
 import br.com.sunny.day.cadastro.entrega.core.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
