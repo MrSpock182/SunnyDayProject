@@ -1,4 +1,4 @@
-package br.com.sunny.day.cadastro.entrega.domain.enumerable;
+package br.com.sunny.day.cadastro.entrega.core.domain.enumerable;
 
 public enum GenderEnum {
     MALE("M"),

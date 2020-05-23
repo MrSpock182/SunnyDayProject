@@ -1,6 +1,6 @@
 package br.com.sunny.day.cadastro.entrega.integration.implementation;
 
-import br.com.sunny.day.cadastro.entrega.domain.dto.CepResponseWithPostmon;
+import br.com.sunny.day.cadastro.entrega.core.domain.dto.CepResponseWithPostmon;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,6 +1,6 @@
-package br.com.sunny.day.cadastro.entrega.domain.orm;
+package br.com.sunny.day.cadastro.entrega.core.domain.orm;
 
-import br.com.sunny.day.cadastro.entrega.domain.enumerable.GenderEnum;
+import br.com.sunny.day.cadastro.entrega.core.domain.enumerable.GenderEnum;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 

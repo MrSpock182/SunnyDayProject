@@ -1,6 +1,6 @@
 package br.com.sunny.day.cadastro.entrega.repository.implementation;
 
-import br.com.sunny.day.cadastro.entrega.domain.orm.Client;
+import br.com.sunny.day.cadastro.entrega.core.domain.orm.Client;
 import br.com.sunny.day.cadastro.entrega.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

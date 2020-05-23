@@ -1,4 +1,4 @@
-package br.com.sunny.day.cadastro.entrega.domain.dto;
+package br.com.sunny.day.cadastro.entrega.core.domain.dto;
 
 public class CepResponseWithPostmon {
     private String logradouro;

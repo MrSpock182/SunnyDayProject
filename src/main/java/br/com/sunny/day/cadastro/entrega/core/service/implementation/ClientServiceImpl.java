@@ -1,10 +1,10 @@
-package br.com.sunny.day.cadastro.entrega.service.implementation;
+package br.com.sunny.day.cadastro.entrega.core.service.implementation;
 
 import br.com.sunny.day.cadastro.entrega.integration.ConsultaCep;
-import br.com.sunny.day.cadastro.entrega.domain.dto.Cep;
-import br.com.sunny.day.cadastro.entrega.domain.orm.Client;
+import br.com.sunny.day.cadastro.entrega.core.domain.dto.Cep;
+import br.com.sunny.day.cadastro.entrega.core.domain.orm.Client;
 import br.com.sunny.day.cadastro.entrega.repository.ClientRepository;
-import br.com.sunny.day.cadastro.entrega.service.ClientService;
+import br.com.sunny.day.cadastro.entrega.core.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

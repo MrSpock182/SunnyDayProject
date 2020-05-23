@@ -1,6 +1,6 @@
 package br.com.sunny.day.cadastro.entrega.repository.implementation;
 
-import br.com.sunny.day.cadastro.entrega.domain.orm.Client;
+import br.com.sunny.day.cadastro.entrega.core.domain.orm.Client;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

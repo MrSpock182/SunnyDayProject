@@ -1,7 +1,7 @@
 package br.com.sunny.day.cadastro.entrega.integration.implementation;
 
-import br.com.sunny.day.cadastro.entrega.domain.dto.Cep;
-import br.com.sunny.day.cadastro.entrega.domain.dto.CepResponseWithPostmon;
+import br.com.sunny.day.cadastro.entrega.core.domain.dto.Cep;
+import br.com.sunny.day.cadastro.entrega.core.domain.dto.CepResponseWithPostmon;
 import br.com.sunny.day.cadastro.entrega.integration.ConsultaCep;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
