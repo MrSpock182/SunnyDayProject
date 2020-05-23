@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @Document(collection = "client")
 public class Client {
     @Id
-    private Integer id;
+    private String id;
     private String name;
     private String user;
     private String password;
@@ -17,11 +17,11 @@ public class Client {
     private GenderEnum gender;
     private LocalDate birthDate;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
