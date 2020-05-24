@@ -3,14 +3,14 @@ package br.com.sunny.day.cadastro.entrega.integration.implementation;
 import br.com.sunny.day.cadastro.entrega.core.domain.dto.Cep;
 import br.com.sunny.day.cadastro.entrega.core.domain.dto.CepResponseWithPostmon;
 import br.com.sunny.day.cadastro.entrega.integration.ConsultaCep;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
-@Component
 public class ConsultaCepImpl implements ConsultaCep {
 
-    @Autowired
-    private ConsultaCepWithPostmon consultaPostmon;
+    private final ConsultaCepWithPostmon consultaPostmon;
+
+    public ConsultaCepImpl(ConsultaCepWithPostmon consultaPostmon) {
+        this.consultaPostmon = consultaPostmon;
+    }
 
     @Override
     public Cep consulta(String cep) {

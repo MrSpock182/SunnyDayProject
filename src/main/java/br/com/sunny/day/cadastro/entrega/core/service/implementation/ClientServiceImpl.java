@@ -8,9 +8,9 @@ import br.com.sunny.day.cadastro.entrega.core.service.ClientService;
 
 public class ClientServiceImpl implements ClientService {
 
-    private ConsultaCep consultaCep;
+    private final ConsultaCep consultaCep;
 
-    private ClientRepository repository;
+    private final ClientRepository repository;
 
     public ClientServiceImpl(ConsultaCep consultaCep, ClientRepository repository) {
         this.repository = repository;
